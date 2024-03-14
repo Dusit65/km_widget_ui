@@ -1,0 +1,35 @@
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+class View3UI extends StatelessWidget {
+  const View3UI({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return  Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+//icon
+            Icon(
+              FontAwesomeIcons.x,
+              size: MediaQuery.of(context).size.width *0.75,
+              color:Colors.grey
+            ),
+            SizedBox(
+              height:  MediaQuery.of(context).size.height *0.08,
+            ),
+            Text(
+              'X',
+              style: TextStyle(
+                color: Colors.grey,
+                fontSize:  MediaQuery.of(context).size.height *0.026,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
